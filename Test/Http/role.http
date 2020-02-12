@@ -1,0 +1,18 @@
+# 测试role表的http请求
+@uri = http://localhost:3001/admin/api/rest
+
+###
+GET {{uri}}/role
+
+###
+POST {{uri}}/role
+Content-Type: application/json
+
+{
+  "name": "Users",
+  "alias": "普通用户"
+}
+
+
+###
+DELETE  {{uri}}/user/user._id

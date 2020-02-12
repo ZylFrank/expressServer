@@ -1,0 +1,21 @@
+@uri = http://localhost:3001/admin/api/rest
+
+###
+GET {{uri}}/category
+
+###
+POST {{uri}}/category
+Content-Type: application/json
+
+{
+  "name": "载具"
+}
+
+###
+PUT {{uri}}/category/5e3c13a0b71c31ce57be5387
+Content-Type: application/json
+
+{"name": "武器"}
+
+###
+DELETE  {{uri}}/category/5e427a2c69795f0e66e9ae2a

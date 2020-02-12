@@ -43,7 +43,7 @@ module.exports = app => {
     });
   })
 
-  app.use('/admin/api/rest/:resource', authMiddleWare(), resourceMiddleWare(), router);
+  app.use('/admin/api/rest/:resource', resourceMiddleWare(), router);
 
   // 文件上传
   const multer = require('multer');

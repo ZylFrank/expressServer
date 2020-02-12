@@ -1,0 +1,17 @@
+@uri = http://localhost:3001/admin/api/rest
+
+###
+GET {{uri}}/user
+
+###
+POST {{uri}}/user
+Content-Type: application/json
+
+{
+  "username": "guest",
+  "password": "123456"
+}
+
+
+###
+DELETE  {{uri}}/user/user._id

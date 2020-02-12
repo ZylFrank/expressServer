@@ -9,6 +9,10 @@ const userSchema = new mongoose.Schema({
     	return require(bcrypt).hashSync(val, 10);
   	},
   },
+  roles: [{
+    type: mongoose.SchemaTypes.ObjectId,
+    ref: 'Role',
+  }],
 })
 const User = mongoose.model('User', userSchema);
 
